@@ -33,5 +33,9 @@ namespace ISOB_2
                 sender.Close();
             }
         }
+        public override string ToString()
+        {
+            return $"Recieved message {Type.ToString()} ";
+        }
     }
 }

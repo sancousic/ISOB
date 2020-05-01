@@ -11,6 +11,7 @@ namespace ISOB_2
         public void Listen()
         {
             UdpClient reciever = new UdpClient(Config.TGS_port);
+            Console.WriteLine($"TGS started on 127.0.0.1:{Config.TGS_port}");
             IPEndPoint remoteIP = null;
             try
             {
@@ -64,13 +65,16 @@ namespace ISOB_2
                             else
                             {
                                 ReMessage.Type = MessageType.TicketNotValid;
+                                Console.WriteLine("TicketNotValid in TGS;");
                             }
                         }
                         else
                         {
                             ReMessage.Type = MessageType.AccessDenied;
+                            Console.WriteLine("AccessDenied in TGS;");
                         }
                         ReMessage.Send(remoteIP);
+                        Console.WriteLine($"Message sended from TGS to {remoteIP.Address}:{remoteIP.Port}!");
                     }
                 }
             }

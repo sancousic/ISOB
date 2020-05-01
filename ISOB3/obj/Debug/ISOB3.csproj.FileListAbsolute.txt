@@ -4,3 +4,9 @@ C:\Users\Пользователь\source\repos\ISOB3\bin\Debug\ISOB3.exe
 C:\Users\Пользователь\source\repos\ISOB3\bin\Debug\ISOB3.pdb
 C:\Users\Пользователь\source\repos\ISOB3\obj\Debug\ISOB3.exe
 C:\Users\Пользователь\source\repos\ISOB3\obj\Debug\ISOB3.pdb
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\bin\Debug\ISOB3.exe.config
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\bin\Debug\ISOB3.exe
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\bin\Debug\ISOB3.pdb
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\obj\Debug\ISOB3.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\obj\Debug\ISOB3.exe
+C:\Users\Пользователь\source\repos\ISOB\ISOB3\obj\Debug\ISOB3.pdb

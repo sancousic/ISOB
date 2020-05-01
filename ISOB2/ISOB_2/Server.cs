@@ -10,6 +10,7 @@ namespace ISOB_2
     {
         public void Listen()
         {
+            Console.WriteLine($"SS started on 127.0.0.1:{Config.SS_port}");
             UdpClient reciever = new UdpClient(Config.SS_port);
             IPEndPoint remoteIP = null;
             try
@@ -20,7 +21,7 @@ namespace ISOB_2
                     remoteIP.Port = Config.C_port;
 
                     var message = Serilizer<Message>.Deserilaze(data);
-
+                    Console.WriteLine(message.ToString() + $"from {remoteIP.Address}:{remoteIP.Port};");
                     if (message.Type == MessageType.CToSs)
                     {
                         var tgs_bytes = Helper.RecoverData(
@@ -44,6 +45,7 @@ namespace ISOB_2
                         else ReMessage.Type = MessageType.TicketNotValid;
 
                         ReMessage.Send(remoteIP);
+                        Console.WriteLine($"Message sended from SS to {remoteIP.Address}:{remoteIP.Port}");
                     }
                     
                 }

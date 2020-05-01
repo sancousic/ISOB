@@ -13,6 +13,8 @@ namespace ISOB3
         {
             Server.Listen.Start();
             Hacker1.Hack.Start();
+            //Hacker2.Hack.Start();
+            //Hacker3.Hack.Start();
             Console.ReadLine();
         }
     }

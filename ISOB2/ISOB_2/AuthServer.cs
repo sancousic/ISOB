@@ -21,6 +21,7 @@ namespace ISOB_2
         public void Listen()
         {
             UdpClient reciever = new UdpClient(Config.AS_port);
+            Console.WriteLine($"AS started on 127.0.0.1:{Config.AS_port}");
             IPEndPoint remoteIP = null;
             try
             {
@@ -35,10 +36,10 @@ namespace ISOB_2
                     if(message.Type == MessageType.CToAs)
                     {                        
                         var id = Helper.ToString(message.Data[0].ToArray());
+                        Console.WriteLine($"Message from {remoteIP.Address}:{remoteIP.Port} with c = {id} to AuthServer!");
                         if (Users.Contains(id))
                         {
                             ReMessage.Type = MessageType.AsToC;
-                            Console.WriteLine($"Message from {remoteIP.Address}:{remoteIP.Port} with c = {id} to AuthServer!");
 
                             TicketGranting ticket = new TicketGranting()
                             {
@@ -63,8 +64,10 @@ namespace ISOB_2
                         else
                         {
                             ReMessage.Type = MessageType.AccessDenied;
+                            Console.WriteLine("AccessDenied in AS");
                         }
                         ReMessage.Send(remoteIP);
+                        Console.WriteLine($"Message sended from AS to {remoteIP.Address}:{remoteIP.Port}!");
                     }
                 }
             }

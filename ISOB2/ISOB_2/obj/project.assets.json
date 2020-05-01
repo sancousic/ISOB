@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Пользователь\\source\\repos\\ISOB2\\ISOB_2\\ISOB_2.csproj",
+      "projectUniqueName": "C:\\Users\\Пользователь\\source\\repos\\ISOB\\ISOB2\\ISOB_2\\ISOB_2.csproj",
       "projectName": "ISOB_2",
-      "projectPath": "C:\\Users\\Пользователь\\source\\repos\\ISOB2\\ISOB_2\\ISOB_2.csproj",
+      "projectPath": "C:\\Users\\Пользователь\\source\\repos\\ISOB\\ISOB2\\ISOB_2\\ISOB_2.csproj",
       "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Пользователь\\source\\repos\\ISOB2\\ISOB_2\\obj\\",
+      "outputPath": "C:\\Users\\Пользователь\\source\\repos\\ISOB\\ISOB2\\ISOB_2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

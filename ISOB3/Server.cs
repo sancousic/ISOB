@@ -38,7 +38,7 @@ namespace ISOB3
                     else if (Established.Contains(message.sourcePort))
                         continue;
                     else if (SynRecived.Contains(message.sourcePort) && message.ack)
-                        AddToConnected(message);
+                        AddToConnected(message);                    
                     else if (!SynRecived.Contains(message.sourcePort) && message.syn)
                         AddToSynReceived(message);
                 }
